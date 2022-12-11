@@ -2,7 +2,7 @@
 author:
 - "By: Anthony Sasso"
 date: 2022-12-11
-title: Sasso_C\_Cpp_GenNetLib
+title: Sasso_C_Cpp_GenNetLib
 ---
 
 # Introduction
