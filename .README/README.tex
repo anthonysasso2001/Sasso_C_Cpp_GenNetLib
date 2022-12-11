@@ -1,0 +1,118 @@
+\documentclass{article}
+
+%   included packages
+\usepackage[a4paper,margin = 14mm]{geometry} %0.5 inch margins a4 paper
+\usepackage{amsmath}
+\usepackage{newpxtext,newpxmath}
+\usepackage{microtype}
+\usepackage{titling}
+
+%   version history (should be used in conjunction with git)
+\usepackage{vhistory}
+
+%   Allows me to use hyperlinks for table of contents etc.
+\usepackage{hyperref}
+\usepackage{xcolor}
+\hypersetup{
+    linktoc     =   all,
+    colorlinks,
+    citecolor   =   black,
+    filecolor   =   black,
+    linkcolor   =   black,
+    urlcolor    =   blue
+}
+
+%   Setting up the code examples
+% \usepackage{listings}
+
+
+% \definecolor  {dkgreen}   {rgb}   {0,0.6,0}
+% \definecolor  {gray}      {rgb}   {0.5,0.5,0.5}
+% \definecolor  {mauve}     {rgb}   {0.58,0,0.82}
+
+% \lstset{
+%   frame               =   tb,
+%   language            =   C++,
+%   aboveskip           =   3mm,
+%   belowskip           =   3mm,
+%   showstringspaces    =   false,
+%   columns             =   flexible,
+%   basicstyle          =   {\small\ttfamily},
+%   numbers             =   none,
+%   numberstyle         =   \tiny\color{gray},
+%   keywordstyle        =   \color{blue},
+%   commentstyle        =   \color{dkgreen},
+%   stringstyle         =   \color{mauve},
+%   breaklines          =   true,
+%   breakatwhitespace   =   true,
+%   tabsize             =   3
+% }
+
+%   formatting for document
+
+%   Push everything to the left cause I think it looks cleaner
+\preauthor  {\begin{flushleft}}
+\postauthor {\end{flushleft}}
+\predate    {\begin{flushleft}}
+\postdate   {\end{flushleft}}    
+\setcounter {secnumdepth}{0}
+
+%   Document Title & author
+\title      {\Huge Sasso\_C\_Cpp\_GenNetLib}
+\author     {By: Anthony Sasso}
+
+%   updates date for each compile, that way this + versioning tells reader which they are reading?
+\date       {\today}
+
+%   no indents for paragraphs (change depending on doc type)
+\setlength  {\parindent}    {0pt}
+
+%   custom commands / formatting shortcuts
+%   combine bold & italic
+\newcommand{\textbfit}[1]{\textbf{\textit{#1}}} 
+
+%   footnote with label, colour, and inputted text... then sets back to default
+% \newcommand{\clfootnote}[3]{\color{#2}{\footnote{\label{#1}{ \color{#2}{#3}}}}\color{defaultcolor}} 
+
+%   set to defualt colour (black)
+\AtBeginDocument    {\colorlet{defaultcolor}{.}}
+
+%   writing goes here
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+
+\newpage
+\section{Introduction}
+Collection of generic networking libraries in C/C++ ideally simplifying use and allowing quicker project builds.
+
+\section{Getting Started}
+\subsection{Software Dependencies}
+\begin{enumerate}
+    \item Ensure C17, Cxx20, CMake, Ninja, Clang, Doxygen are present on target machine for development and compilation.
+    \item Docker desktop / docker instance exists on your target machine for using docker compose \& docker functions.
+    \item Have an active internet connection for pulling the server base images, etc during compose.
+    \item Optionally have VSCode or some automation tool for using CMake > Ninja-Multi-Config generation (please ensure to use the Multi-Config version for testing etc. \textbf{before} pushing back to your branch).
+\end{enumerate}
+
+\section{Build \& Test}
+\begin{enumerate}
+    \item Download / Clone Target Branch (by default would recommend the latest one).
+    \item Have Docker up / running.
+    \item Run the appropriate CMake build for the target (Ninja-Multi-Config).
+    \item Run \textbf{'`docker-compose up -d`'} to run the test server.
+    \item Access at test output file.
+\end{enumerate}
+
+\section{Contribute!}
+To Contribute to the project follow these rules:
+\begin{itemize}
+    \item First create an issue / feature request notifying any changes that are wanted.
+    \item Wait to hear the initial response / accepting of that issue before you begin coding.
+    \item Fork or Branch (dependent on scope, membership in core development team, etc.) the repo and code any necessary fixed to fulfill this new feature / fix the bug.
+    \item Issue a pull request back to the main repo with your latest released version and attach a text file or description within the pull request detailing your changes, additions, considerations with this pull request. In addition, follow the '`LatexToMarkdownNoted.md`' within the '`.README`' Source folder to update the README listing any necessary changes, and have this as your final commit before the pull request.
+\end{itemize}
+
+\end{document}

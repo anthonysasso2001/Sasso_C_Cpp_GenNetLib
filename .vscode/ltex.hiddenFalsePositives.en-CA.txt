@@ -1,0 +1,4 @@
+{"rule":"MORFOLOGIK_RULE_EN_CA","sentence":"^\\QOR as a single commit within a new \"name_README_purpose\" (ex Sasso_README_SpellingAndFormatting) branch to allow code review before approving changes.\\E$"}
+{"rule":"WORD_CONTAINS_UNDERSCORE","sentence":"^\\QOR as a single commit within a new \"name_README_purpose\" (ex Sasso_README_SpellingAndFormatting) branch to allow code review before approving changes.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_CA","sentence":"^\\QSassoCCppGenNetLib By: Anthony Sasso\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qsecnumdepth 0\\E$"}
