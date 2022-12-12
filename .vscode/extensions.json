@@ -1,0 +1,17 @@
+//  Default Extensions for this service, to enable development & testing with more consistency
+
+{
+	"recommendations": [
+		"ms-vscode.cpptools-extension-pack",
+        "jeff-hykin.better-cpp-syntax",
+        "ms-azuretools.vscode-docker",
+        "ms-vscode-remote.remote-containers",
+        "esbenp.prettier-vscode",
+		"eamodio.gitlens",
+		"felipecaputo.git-project-manager",
+        "James-Yu.latex-workshop",
+		"valentjn.vscode-ltex",
+		"DavidAnson.vscode-markdownlint",
+		"PKief.markdown-checkbox"
+	]
+}
